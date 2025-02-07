@@ -44,7 +44,16 @@ const Navbar = () => {
     }
 
     const handleSearch = () => {
-        navigate(`/search/${searchedName}`);
+        if(searchedName.length){
+            navigate(`/search/${searchedName}`);
+        }
+    }
+    const handleSearchInMobile = () => {
+        if(searchedName.length){
+            navigate(`/search/${searchedName}`);
+        }else{
+            setSearchOpen(!true);
+        }
     }
 
     return (
@@ -59,14 +68,14 @@ const Navbar = () => {
                     <input
                         type="text"
                         placeholder="Search..."
-                        className={`${searchOpen ? "w-[80%]" : "w-0"
+                        className={`${searchOpen ? "w-[80%]" : "w-[70px]"
                             } transition-all duration-300 md:px-4 px-2 md:py-2 rounded-full text-black bg-white md:w-full md:block absolute md:relative border border-gray-700`}
                         onChange={(e)=>setSeachedName(e.target.value)}
                     />
 
                     {/* Mobile Search Icon */}
                     <button
-                        onClick={()=>setSearchOpen(!searchOpen)}
+                        onClick={handleSearchInMobile}
                         className="md:hidden p-2 bg-gray-700 rounded-full ml-auto"
                     >
                         <Search style={{color: "white"}} size={15} />
