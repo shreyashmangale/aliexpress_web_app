@@ -14,7 +14,7 @@ const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [username, setUserName] = useState('');
-    console.log(email, password)
+  //console.log(email, password)
 
     async function handleSignup(e) {
         e.preventDefault();
@@ -36,7 +36,7 @@ const Signup = () => {
             }
         } catch (error) {
             //console.log(error.message)
-            toast.error(error.message)
+            // toast.error(error.message)
         }
     }
 

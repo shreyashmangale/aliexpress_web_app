@@ -18,7 +18,7 @@ const Navbar = () => {
     const userData = useContext(UserContext);
 
     const [user, setUser] = useState(null);
-    console.log(user)
+  //console.log(user)
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -37,7 +37,7 @@ const Navbar = () => {
     async function handleLogout() {
         try {
             await signOut(auth);
-            console.log('User logged out');
+          //console.log('User logged out');
         } catch (error) {
             console.error('Error logging out:', error.message);
         }

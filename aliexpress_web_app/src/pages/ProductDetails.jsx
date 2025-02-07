@@ -19,11 +19,11 @@ const ProductDetails = () => {
 
   const { Description } = useParams(); // Use exact param name from route
   const decodedProductName = decodeURIComponent(Description).replace('----', '/'); // Decode here
-  console.log(decodedProductName.replace('----', '/'))
+//console.log(decodedProductName.replace('----', '/'))
 
 
   const categoryName = useSelector((state) => state.category);
-  console.log(categoryName);
+//console.log(categoryName);
 
   // const location = useLocation();
   // console.log(location.pathname.split("/")[2].split("%20").join(" "));
@@ -31,12 +31,12 @@ const ProductDetails = () => {
   // console.log(productName)
 
   const products = useSelector((state) => state.products.products);
-  console.log(products)
+//console.log(products)
 
 
   useEffect(() => {
     const product = products.find((item) => item.Description === decodedProductName);
-    console.log(product)
+  //console.log(product)
     setProductDetails(product)
   }, [Description])
 
@@ -91,7 +91,7 @@ const ProductDetails = () => {
 
 
   const [user, setUser] = useState(null);
-  console.log(user)
+//console.log(user)
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -118,7 +118,7 @@ const ProductDetails = () => {
             await setDoc(cartItemRef, {
                 ...item, // Store the item details in Firestore
             });
-            console.log("Added to cart")
+          //console.log("Added to cart")
             toast.success("Added to Cart");
         } catch (error) {
             console.error("Error adding to Cart: ", error);

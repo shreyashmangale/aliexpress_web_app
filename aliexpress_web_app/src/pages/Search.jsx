@@ -16,7 +16,7 @@ const Search = () => {
     const navigate = useNavigate();
 
     const {searchedName} = useParams();
-    console.log(searchedName);
+  //console.log(searchedName);
     
     const dispatch = useDispatch();
 
@@ -43,11 +43,11 @@ const Search = () => {
       }, [searchedName, searchData]); // Only run this effect when `searchedName` or `searchData` changes
     
 
-    console.log(searchedProducts)
+  //console.log(searchedProducts)
 
 
     const [user, setUser] = useState(null);
-    console.log(user)
+  //console.log(user)
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -74,7 +74,7 @@ const Search = () => {
                 await setDoc(cartItemRef, {
                     ...item, // Store the item details in Firestore
                 });
-                console.log("Added to cart")
+              //console.log("Added to cart")
                 toast.success("Added to Cart");
             } catch (error) {
                 console.error("Error adding to Cart: ", error);

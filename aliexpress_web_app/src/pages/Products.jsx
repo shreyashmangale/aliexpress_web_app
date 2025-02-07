@@ -36,7 +36,7 @@ const Products = () => {
 
             try {
                 const response = await axios.request(options);
-                console.log(response.data.slice(0, 25));
+              //console.log(response.data.slice(0, 25));
                 setFetchedData(response.data.slice(0, 25));
 
                 dispatch(setProducts(response.data.slice(0, 100)));
@@ -53,7 +53,7 @@ const Products = () => {
 
 
     const [user, setUser] = useState(null);
-    console.log(user)
+  //console.log(user)
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -80,7 +80,7 @@ const Products = () => {
                 await setDoc(cartItemRef, {
                     ...item, // Store the item details in Firestore
                 });
-                console.log("Added to cart")
+              //console.log("Added to cart")
                 toast.success("Added to Cart");
             } catch (error) {
                 console.error("Error adding to Cart: ", error);

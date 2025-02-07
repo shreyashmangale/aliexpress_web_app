@@ -29,7 +29,7 @@ export const db = getFirestore(app);
 setPersistence(auth, browserLocalPersistence)
   .then(() => {
     // Persistence is now set, and authentication state will be preserved across page reloads
-    console.log("Firebase auth persistence is set to localStorage.");
+  //console.log("Firebase auth persistence is set to localStorage.");
   })
   .catch((error) => {
     console.error("Error setting persistence:", error.message);

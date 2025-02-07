@@ -6,7 +6,7 @@ import { collection, getDocs } from "firebase/firestore";
 
 const Cart = () => {
     const [user, setUser] = useState(null);
-    console.log(user)
+  //console.log(user)
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -36,10 +36,10 @@ const Cart = () => {
                         id: doc.id,
                         ...doc.data(),
                     }));
-                    console.log(cartItems);
+                  //console.log(cartItems);
                     setCartItems(cartItems);
                 } else {
-                    console.log("User is not authenticated.");
+                  //console.log("User is not authenticated.");
                 }
             } catch (error) {
                 console.error("Error fetching cartItems: ", error);
@@ -52,7 +52,7 @@ const Cart = () => {
         }
     }, [user]); // Dependency on 'user' to refetch data if it changes
 
-    console.log(cartItems)
+  //console.log(cartItems)
 
 
     // Calculate total price
