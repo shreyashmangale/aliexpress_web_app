@@ -28,11 +28,32 @@ export const ProductSlider = () => {
 
     const products = [
         {
-            Brand: "Yash Gallery",
-            Description: "Women Printed Cotton Blend Anarkali Kurta",
-            Image: "https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/p/b/v/3xl-1189plykmaroon-akiko-original-imagxrnkn6z3xmmy.jpeg?q=70",
-            Price: "₹974",
-            Unnamed: 276
+            "Brand": "VeBNoR",
+            "Description": "Men Printed Round Neck Polyester Green T-Shirt",
+            "Image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/9/t/l/xl-ts12-vebnor-original-imahyf5svpbyng3v.jpeg?q=70",
+            "Price": "₹259",
+            "Unnamed: 0": 1
+        },
+        {
+            "Brand": "VeBNoR",
+            "Description": "Men Regular Fit Solid Mandarin Collar Casual Shirt",
+            "Image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/a/j/v/m-st1-vebnor-original-imahftaarhyyd3jy.jpeg?q=70",
+            "Price": "₹299",
+            "Unnamed: 0": 2
+        },
+        {
+            "Brand": "VeBNoR",
+            "Description": "Men Regular Fit Printed Spread Collar Casual Shirt",
+            "Image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/y/k/e/m-st10-vebnor-original-imagsfcfdf3masf5.jpeg?q=70",
+            "Price": "₹269",
+            "Unnamed: 0": 3
+        },
+        {
+            "Brand": "Surhi",
+            "Description": "Men Regular Fit Checkered Spread Collar Casual Shirt",
+            "Image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/p/z/z/m-pk21sh09g-surhi-original-imahfyes8eugjdsr.jpeg?q=70",
+            "Price": "₹299",
+            "Unnamed: 0": 4
         },
         {
             Brand: "VredeVogel",
@@ -63,12 +84,29 @@ export const ProductSlider = () => {
             Unnamed: 280
         },
         {
-            Brand: "VredeVogel",
-            Description: "Women Silk Blend Kurta Pant Dupatta Set",
-            Image: "https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/0/r/z/xxl-vv-9211-vredevogel-original-imahyg2uhtxtqnzj.jpeg?q=70",
-            Price: "₹799",
-            Unnamed: 281
-        }
+            "Brand": "Lenovo IdeaPad Slim 1 AMD Ryzen 5 Quad Core 7520U - (8 GB/SSD/512 GB SSD/Windows 11 Home) 15AMN7 Thin ...",
+            "Description": "AMD Ryzen 5 Quad Core Processor8 GB LPDDR5 RAMWindows 11 Operating System512 GB SSD39.62 cm (15.6 inch) DisplayMicrosoft Office Home & Student 20211 Year Carry-in Warranty",
+            "Image": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/a/m/8/15amn7-thin-and-light-laptop-lenovo-original-imagrzhgyudpzzxs.jpeg?q=70",
+            "Price": "₹35,999",
+            "Tag": "Laptop, Electronics",
+            "Unnamed: 0": 44
+        },
+        {
+            "Brand": "Infinix Inbook Y2 Plus Intel Core i3 11th Gen 1115G4 - (8 GB/SSD/512 GB SSD/Windows 11 Home) XL29 Thin...",
+            "Description": "Intel Core i3 Processor (11th Gen)8 GB LPDDR4X RAM64 bit Windows 11 Operating System512 GB SSD39.62 cm (15.6 inch) DisplayNA1 Year Onsite Warranty",
+            "Image": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/v/9/v/inbook-y2-plus-thin-and-light-laptop-infinix-original-imahfqhwahdbft87.jpeg?q=70",
+            "Price": "₹24,990",
+            "Tag": "Laptop, Electronics",
+            "Unnamed: 0": 45
+        },
+        {
+            "Brand": "Lenovo Yoga Slim 6 WUXGA OLED Intel Core i7 13th Gen 13700H - (16 GB/SSD/512 GB SSD/Windows 11 Home) 1...",
+            "Description": "Intel Core i7 Processor (13th Gen)16 GB LPDDR5X RAMWindows 11 Operating System512 GB SSD35.56 cm (14 inch) Display1 Year Onsite Warranty + 1Year Premium Care",
+            "Image": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/3/r/g/-original-imahyyhrsfw6gsez.jpeg?q=70",
+            "Price": "₹88,190",
+            "Tag": "Laptop, Electronics",
+            "Unnamed: 0": 46
+        },
     ];
 
     var settings = {
