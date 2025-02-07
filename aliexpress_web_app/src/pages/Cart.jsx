@@ -42,7 +42,7 @@ const Cart = () => {
                   //console.log("User is not authenticated.");
                 }
             } catch (error) {
-                console.error("Error fetching cartItems: ", error);
+              //console.error("Error fetching cartItems: ", error);
             }
         };
 

@@ -42,7 +42,7 @@ const Products = () => {
                 dispatch(setProducts(response.data.slice(0, 100)));
 
             } catch (error) {
-                console.error(error);
+              //console.error(error);
             }
         };
 
@@ -83,7 +83,7 @@ const Products = () => {
               //console.log("Added to cart")
                 toast.success("Added to Cart");
             } catch (error) {
-                console.error("Error adding to Cart: ", error);
+              //console.error("Error adding to Cart: ", error);
                 toast.error("Error adding to Cart");
             }
         } else {

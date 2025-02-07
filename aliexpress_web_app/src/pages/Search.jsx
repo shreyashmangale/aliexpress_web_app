@@ -77,7 +77,7 @@ const Search = () => {
               //console.log("Added to cart")
                 toast.success("Added to Cart");
             } catch (error) {
-                console.error("Error adding to Cart: ", error);
+              //console.error("Error adding to Cart: ", error);
                 toast.error("Error adding to Cart");
             }
         } else {

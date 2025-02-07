@@ -32,6 +32,6 @@ setPersistence(auth, browserLocalPersistence)
   //console.log("Firebase auth persistence is set to localStorage.");
   })
   .catch((error) => {
-    console.error("Error setting persistence:", error.message);
+    //console.error("Error setting persistence:", error.message);
   });
 export default app;
