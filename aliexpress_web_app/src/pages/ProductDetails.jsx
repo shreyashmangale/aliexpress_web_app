@@ -151,7 +151,7 @@ const ProductDetails = () => {
               <p className='text-lg text-gray-600 font-semibold'>Experience top-quality and exceptional performance with our premium product. Designed with precision and durability, it offers reliability, functionality, and style to meet your everyday needs. Whether for personal or professional use, this product delivers outstanding value and satisfaction. Upgrade your experience today!</p>
 
 
-              {
+              {/* {
                 productDetails.Tag && !productDetails.Tag.includes("Electronics" || "Watches" || "Mobiles") ?
 
                   <div className='flex items-center gap-4'>
@@ -173,7 +173,7 @@ const ProductDetails = () => {
                   <div></div>}
               {selectedSize &&
                 <h3>Selected Size : {selectedSize}</h3>
-              }
+              } */}
               <h3 className='text-2xl font-inter'>{productDetails.Price}</h3>
 
               <div className='w-full flex gap-10'>
